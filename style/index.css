@@ -1,6 +1,7 @@
 @import url('./header.css');
 @import url('./nav.css');
 @import url('./preview.css');
+@import url('./about.css');
 
 body {
   font-family: 'Open Sans', sans-serif;

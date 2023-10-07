@@ -2,7 +2,15 @@
   background-image: url('../assets/images/bg_1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
+}
+
+.preview__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
 }
 
 .preview__block {
@@ -10,7 +18,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 250px auto 0;
+  margin: 0 auto;
   width: 100%;
   max-width: 700px;
 }
@@ -57,7 +65,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 350px auto 0;
+  margin: 0 auto;
   text-transform: uppercase;
   width: 80px;
   font-weight: bold;
