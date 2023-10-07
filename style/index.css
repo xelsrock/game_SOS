@@ -2,12 +2,14 @@
 @import url('./nav.css');
 @import url('./preview.css');
 @import url('./about.css');
+@import url('./rule.css');
 
 body {
   font-family: 'Open Sans', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
+  margin: 0;
   font-family: 'Bebas Neue', sans-serif;
 }
 
