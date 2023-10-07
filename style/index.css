@@ -1,0 +1,21 @@
+@import url('./header.css');
+@import url('./nav.css');
+@import url('./preview.css');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.container {
+  padding: 20px 120px;
+  height: 100vh;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+}

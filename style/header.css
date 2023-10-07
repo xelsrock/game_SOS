@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 55px;
+  height: 55px;
+}
+
+.header__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__language {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 50px;
+  border-right: 1px solid #fff;
+  color: #fff;
+}
+
