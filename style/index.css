@@ -3,6 +3,8 @@
 @import url('./preview.css');
 @import url('./about.css');
 @import url('./rule.css');
+@import url('./requirements.css');
+@import url('./reviews.css');
 
 body {
   font-family: 'Open Sans', sans-serif;

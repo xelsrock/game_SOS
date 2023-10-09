@@ -1,0 +1,87 @@
+.requirements__container {
+  background-image: url('../assets/images/bg_4.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.req__subtitle {
+  margin-top: 130px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.req__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 80px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 130px;
+}
+
+.req__table {
+  display: grid;
+  grid-template-columns: 280px 300px;
+  grid-template-areas: "A B" "C D" "F F";
+  max-width: 580px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, .3);
+  color: #fff;
+}
+
+.req__os {
+  padding: 20px;
+  grid-area: A;
+  border-bottom: 1px solid rgba(255, 255, 255, .3);
+  border-right: 1px solid rgba(255, 255, 255, .3);
+}
+
+.req__processor {
+  padding: 20px;
+  grid-area: B;
+  border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.req__memory {
+  padding: 20px;
+  grid-area: C;
+  border-bottom: 1px solid rgba(255, 255, 255, .3);
+  border-right: 1px solid rgba(255, 255, 255, .3);
+}
+
+.req__storage {
+  padding: 20px;
+  grid-area: D;
+  border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.req__graphics {
+  padding: 20px;
+  grid-area: F;
+}
+
+.req__char-title {
+  text-transform: uppercase;
+  color: #FFB548;
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+.req__char-description {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}

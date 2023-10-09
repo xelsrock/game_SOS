@@ -1,5 +1,5 @@
 .rule {
-  background-image: radial-gradient(95% 80%,rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .9)), url('../assets/images/bg_3.jpg');
+  background-image: url('../assets/images/bg_3.jpg');
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -20,6 +20,7 @@
   font-weight: 400;
   letter-spacing: 2px;
   text-transform: uppercase;
+  margin-top: 100px;
   margin-bottom: 25px;
   color: #fff;
 }
@@ -46,12 +47,24 @@
 }
 
 .rule__item-title {
+  position: relative;
   font-size: 36px;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: 500;
   margin-bottom: 15px;
   color: #FFB548;
+}
+
+.rule__item-title:after {
+  content: url('../assets/images/ellipse.svg');
+  position: absolute;
+  top: -8px;
+  left: -40px;
+}
+
+.rule__item.active .rule__item-title:after {
+  content: url('../assets/images/ellipse_full.svg');
 }
 
 .rule__item__description {
