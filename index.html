@@ -17,7 +17,7 @@
   <body>
     <main class="main">
       <div class="preview">
-        <div class="container">
+        <div class="container header__container">
           <header class="header">
             <img class="header__logo" src="./assets/images/logo.png" alt="Логотип игры" />
             <nav class="header__nav">
@@ -31,8 +31,8 @@
             </nav>
             <div class="header__info">
               <div class="header__language">eng</div>
-              <img src="./assets/images/xbox.svg" alt="Xbox" />
-              <img src="./assets/images/steam.svg" alt="Steam" />
+              <img class="header__xbox" src="./assets/images/xbox.svg" alt="Xbox" />
+              <img class="header__steam" src="./assets/images/steam.svg" alt="Steam" />
             </div>
           </header>
           <div class="preview__container">
@@ -268,8 +268,10 @@
               information about game. We don’t spam.
             </p>
 
-            <input type="text" placeholder="Your email address" class="subscribe__input" />
-            <button class="subscribe__btn btn">Subscribe now</button>
+            <div class="subscribe__form">
+              <input type="text" placeholder="Your email address" class="subscribe__input" />
+              <button class="subscribe__btn btn">Subscribe now</button>
+            </div>
           </div>
 
           <footer class="footer">

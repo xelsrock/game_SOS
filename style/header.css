@@ -5,6 +5,10 @@
   align-items: center;
 }
 
+.container.header__container {
+  padding-top: 20px;
+}
+
 .header__logo {
   width: 55px;
   height: 55px;
@@ -25,4 +29,14 @@
   border-right: 1px solid #fff;
   color: #fff;
 }
+
+.header__xbox, .header__steam {
+  cursor: pointer;
+  transition: scale ease-in .1s;
+}
+
+.header__xbox:hover, .header__steam:hover {
+  scale: 1.2;
+}
+
 

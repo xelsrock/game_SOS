@@ -15,8 +15,15 @@
 }
 
 .about__info-subtitle {
-  font-size: 24px;
+  /* Анимация печатной машинки */
+  max-width: 150px;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
   letter-spacing: 2px;
+  animation: typing 3s steps(100, end);
+
+  font-size: 24px;
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
@@ -32,7 +39,7 @@
   font-size: 80px;
   margin-top: 10px;
   margin-bottom: 50px;
-  border-bottom: 1px solid #FFB548;
+  border-bottom: 1px solid #ffb548;
   color: #fff;
 }
 
@@ -81,7 +88,7 @@
 
 .about__slider-img.noactive__one {
   position: absolute;
-  scale: .95;
+  scale: 0.95;
   top: 0;
   left: 50px;
   z-index: 1;
@@ -89,15 +96,24 @@
 
 .about__slider-img.noactive__two {
   position: absolute;
-  scale: .9;
+  scale: 0.9;
   top: 0;
   left: 100px;
-  z-index: 0; 
+  z-index: 0;
 }
 
 .about__slider-arrow {
+  cursor: pointer;
   position: absolute;
   top: 290px;
   right: 180px;
 }
 
+/* @keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+} */

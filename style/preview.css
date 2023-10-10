@@ -42,9 +42,6 @@
 
 .preview__btn {
   padding: 20px 15px;
-  border-radius: 4px;
-  color: #1A1917;
-  background-color: #FFB548;
 }
 
 .preview__btn-title {
@@ -71,7 +68,9 @@
   font-weight: bold;
   font-size: 14px;
   position: relative;
+  top: 30px;
   color: #fff;
+  animation: scroll-down linear .7s 20;
 }
 
 .preview__about:before {
@@ -79,4 +78,18 @@
   position: absolute;
   top: 30px;
   left: 28px;
+}
+
+@keyframes scroll-down {
+  0% {
+    top: 30px;
+  }
+
+  50% {
+    top: 40px;
+  }
+
+  100% {
+    top: 30px;
+  }
 }
