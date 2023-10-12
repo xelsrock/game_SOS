@@ -42,6 +42,7 @@
   flex-direction: row;
   align-items: center;
   gap: 50px;
+  padding: 0;
 }
 
 .footer__social-icon {
@@ -110,5 +111,33 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+  }
+}
+
+@media (max-width: 570px) {
+  .footer__nav {
+    gap: 20px;
+  }
+
+  .footer__copyright-items {
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 30px;
+  }
+
+  .footer__copyright-item {
+    text-align: center;
+    padding: 0;
+    border: 0;
+  }
+
+  .footer__copyright-item:nth-child(2) {
+    padding: 0 10px;
+    border-right: 2px solid #fff;
+    border-left: 2px solid #fff;
+  }
+  
+  .footer__copyright-text {
+    margin-bottom: 30px;
   }
 }

@@ -53,9 +53,9 @@
   text-transform: uppercase;
   font-weight: 500;
   margin-bottom: 10px;
-  color: #FFB548;
+  color: #ffb548;
   cursor: pointer;
-  transition: color ease-in-out .1s;
+  transition: color ease-in-out 0.1s;
 }
 
 .rule__item-title:hover {
@@ -71,7 +71,6 @@
 
 .rule__item.active .rule__item-title:after {
   content: url('../assets/images/ellipse_full.svg');
-  margin-bottom: 15px;
 }
 
 .rule__item.active .rule__item__description {
@@ -118,5 +117,42 @@
 
   .rule__item-title {
     font-size: 30px;
+  }
+}
+
+@media (max-width: 570px) {
+  .rule {
+    background-position: 40%;
+  }
+  
+  .rule__container {
+    max-width: 250px;
+    padding: 0;
+    margin-right: 0;
+  }
+
+  .rule__item {
+    margin-bottom: 15px;
+  }
+
+  .rule__subtitle {
+    font-size: 18px;
+  }
+
+  .rule__item-title:after {
+    top: 0;
+    left: -30px;
+  }
+
+  .rule__title {
+    font-size: 33px;
+  }
+
+  .rule__item-title {
+    font-size: 26px;
+  }
+
+  .rule__item__description {
+    font-size: 16px;
   }
 }

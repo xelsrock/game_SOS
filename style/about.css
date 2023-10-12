@@ -209,3 +209,43 @@
     max-width: 350px;
   }
 }
+
+@media (max-width: 570px) {
+  .about__container {
+    min-height: 800px;
+  }
+
+  .about__info-subtitle {
+    font-size: 18px;
+  }
+
+  .about__info-title {
+    font-size: 33px;
+    max-width: 200px;
+  }
+
+  .about__text {
+    font-size: 16px;
+    max-width: 300px;
+  }
+
+  .about__slider-img {
+    max-width: 250px;
+  }
+
+  .about__slider-img.noactive__one {
+    scale: 0.85;
+    top: -8px;
+    left: 45px;
+  }
+
+  .about__slider-img.noactive__two {
+    scale: .8;
+    top: 8px;
+    left: 75px;
+  }
+
+  .about__slider-arrow {
+    top: 150px;
+  }
+}

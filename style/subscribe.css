@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  min-height: 900px;
+  min-height: 1000px;
 }
 
 .subscribe__block {
@@ -146,5 +146,36 @@
     padding: 20px 40px;
     width: 100%;
     max-width: 250px;
+  }
+}
+
+@media (max-width: 570px) {
+  .subscribe__block {
+    margin-left: 0;
+  }
+
+  .subscribe__subtitle {
+    margin-top: 30px;
+    font-size: 18px;
+    margin-left: 80px;
+  }
+
+  .subscribe__title {
+    font-size: 33px;
+    margin-left: 80px;
+  }
+
+  .subscribe__description {
+    margin-left: 100px;
+    font-size: 16px;
+  }
+
+  .subscribe__container:after {
+    max-width: 230px;
+    top: 3%;
+  }
+
+  .subscribe__btn {
+    max-width: 350px;
   }
 }

@@ -59,3 +59,22 @@
     display: block;
   }
 }
+
+@media (max-width: 570px) {
+  .header__info {
+    gap: 10px;
+  }
+
+  .header__logo {
+    width: 45px;
+    height: 45px;
+  }
+
+  .header__xbox {
+    display: none;
+  }
+
+  .header__steam {
+    display: none;
+  }
+}

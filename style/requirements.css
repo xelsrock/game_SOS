@@ -6,7 +6,7 @@
 }
 
 .req__subtitle {
-  margin-top: 130px;
+  margin-top: 100px;
   margin-bottom: 15px;
   display: flex;
   justify-content: center;
@@ -27,7 +27,7 @@
   font-weight: 500;
   letter-spacing: 3px;
   text-transform: uppercase;
-  margin-bottom: 130px;
+  margin-bottom: 100px;
 }
 
 .req__table {
@@ -115,5 +115,31 @@
   .req__storage,
   .req__graphics {
     padding: 15px;
+  }
+}
+
+@media (max-width: 570px) {
+  .req__subtitle {
+    font-size: 18px;
+  }
+
+  .req__title {
+    font-size: 33px;
+  }
+
+  .req__char-title {
+    font-size: 22px;
+  }
+
+  .req__char-description {
+    font-size: 16px;
+  }
+
+  .req__os,
+  .req__processor,
+  .req__memory,
+  .req__storage,
+  .req__graphics {
+    padding: 10px;
   }
 }
