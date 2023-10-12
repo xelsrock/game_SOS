@@ -30,7 +30,7 @@
   letter-spacing: 3px;
   text-transform: uppercase;
   font-weight: 400;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   color: #fff;
 }
 
@@ -86,4 +86,37 @@
   padding-left: 15px;
   color: #fff;
   transition: display linear 2s;
+}
+
+@media (max-width: 1500px) {
+  .rule__container {
+    margin-right: 5%;
+  }
+}
+
+@media (max-width: 1290px) {
+  .rule__subtitle {
+    margin-top: 0;
+  }
+
+  .rule__title {
+    margin-bottom: 30px;
+    font-size: 65px;
+  }
+}
+
+@media (max-width: 990px) {
+  .rule__subtitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .rule__title {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+
+  .rule__item-title {
+    font-size: 30px;
+  }
 }

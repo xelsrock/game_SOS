@@ -32,38 +32,38 @@
 
 .req__table {
   display: grid;
-  grid-template-columns: 280px 300px;
-  grid-template-areas: "A B" "C D" "F F";
+  grid-template-columns: 56% 44%;
+  grid-template-areas: 'A B' 'C D' 'F F';
   max-width: 580px;
   width: 100%;
-  border: 1px solid rgba(255, 255, 255, .3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   color: #fff;
 }
 
 .req__os {
   padding: 20px;
   grid-area: A;
-  border-bottom: 1px solid rgba(255, 255, 255, .3);
-  border-right: 1px solid rgba(255, 255, 255, .3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .req__processor {
   padding: 20px;
   grid-area: B;
-  border-bottom: 1px solid rgba(255, 255, 255, .3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .req__memory {
   padding: 20px;
   grid-area: C;
-  border-bottom: 1px solid rgba(255, 255, 255, .3);
-  border-right: 1px solid rgba(255, 255, 255, .3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .req__storage {
   padding: 20px;
   grid-area: D;
-  border-bottom: 1px solid rgba(255, 255, 255, .3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .req__graphics {
@@ -73,7 +73,7 @@
 
 .req__char-title {
   text-transform: uppercase;
-  color: #FFB548;
+  color: #ffb548;
   font-size: 24px;
   letter-spacing: 2px;
   margin-bottom: 5px;
@@ -84,4 +84,36 @@
   margin: 0;
   font-size: 18px;
   font-weight: 500;
+}
+
+@media (max-width: 1290px) {
+  .req__subtitle {
+    margin-top: 60px;
+  }
+
+  .req__title {
+    font-size: 65px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 990px) {
+  .req__subtitle {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .req__title {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+
+  .req__os,
+  .req__processor,
+  .req__memory,
+  .req__storage,
+  .req__graphics {
+    padding: 15px;
+  }
 }

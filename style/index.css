@@ -36,3 +36,22 @@ h1, h2, h3, h4, h5 {
 .btn:hover {
   background-color: #ff9900;
 }
+
+@media (max-width: 1500px) {
+  .container {
+    padding: 40px 100px;
+  }
+}
+
+@media (max-width: 1290px) {
+  .container {
+    padding: 30px 70px;
+  }
+}
+
+@media (max-width: 990px) {
+  .container {
+    padding: 20px 50px;
+  }
+}
+

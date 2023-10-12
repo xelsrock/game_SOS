@@ -93,3 +93,28 @@
     top: 30px;
   }
 }
+
+@media (max-width: 1290px) {
+  .preview__subtitle {
+    font-size: 22px;
+  }
+
+  .preview__title {
+    font-size: 65px;
+  }
+}
+
+@media (max-width: 990px) {
+  .preview__title {
+    font-size: 50px;
+  }
+
+  .preview__subtitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .btn.preview__btn {
+    font-size: 14px;
+  }
+}
