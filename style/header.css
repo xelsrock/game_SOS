@@ -7,6 +7,7 @@
 
 .container.header__container {
   padding-top: 20px;
+  overflow: hidden;
 }
 
 .header__logo {
@@ -51,10 +52,6 @@
 }
 
 @media (max-width: 990px) {
-  .header__nav {
-    display: none;
-  }
-
   .header__toogle {
     display: block;
   }
