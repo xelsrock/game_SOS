@@ -12,6 +12,8 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
+    <script src="./js/index.js" type="module"></script>
     <title>SOS</title>
   </head>
   <body>
@@ -57,7 +59,7 @@
               <div class="header__language">eng</div>
               <img class="header__xbox" src="./assets/images/xbox.svg" alt="Xbox" />
               <img class="header__steam" src="./assets/images/steam.svg" alt="Steam" />
-              <button class="header__toogle" type="button">
+              <button class="header__toggle" type="button">
                 <span class="header-toggle__item">
                   <svg
                     width="24"
@@ -156,22 +158,22 @@
           <h3 class="rule__subtitle">What’s so special?</h3>
           <h2 class="rule__title">features</h2>
           <div class="rule__accordion">
-            <div class="rule__item active">
-              <h4 class="rule__item-title">SURVIVE AT ALL COSTS</h4>
+            <div class="rule__item active" id="tab_1">
+              <h4 class="rule__item-title" data-tab="tab_1">SURVIVE AT ALL COSTS</h4>
               <p class="rule__item__description">
                 You have 30 minutes to find a relic, signal for extraction, and grab one of three
                 spots on the rescue chopper.
               </p>
             </div>
-            <div class="rule__item">
-              <h4 class="rule__item-title">CREATE ALLIES AND ENEMIES</h4>
+            <div class="rule__item" id="tab_2">
+              <h4 class="rule__item-title" data-tab="tab_2">CREATE ALLIES AND ENEMIES</h4>
               <p class="rule__item__description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam recusandae totam sint
                 assumenda tempore dolore quidem voluptates corporis quae? Repudiandae!
               </p>
             </div>
-            <div class="rule__item">
-              <h4 class="rule__item-title">IMPRESS THE AUDIENCE</h4>
+            <div class="rule__item" id="tab_3">
+              <h4 class="rule__item-title" data-tab="tab_3">IMPRESS THE AUDIENCE</h4>
               <p class="rule__item__description">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, ducimus minima culpa
                 debitis consequuntur error, tempore eligendi, commodi quam dolore excepturi.

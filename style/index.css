@@ -7,6 +7,7 @@
 @import url('./reviews.css');
 @import url('./subscribe.css');
 @import url('./footer.css');
+@import url('./loader.css');
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -35,6 +36,11 @@ h1, h2, h3, h4, h5 {
 
 .btn:hover {
   background-color: #ff9900;
+}
+
+.btn:disabled {
+  pointer-events: none;
+  opacity: .5;
 }
 
 @media (max-width: 1500px) {

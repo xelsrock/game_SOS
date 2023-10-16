@@ -53,7 +53,7 @@
 
   .nav__bar.active {
     transform: translateX(0);
-    transition: transform .4s linear;
+    transition: transform .1s ease-in;
   }
 
   .nav__item {

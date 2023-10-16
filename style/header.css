@@ -42,7 +42,7 @@
   scale: 1.2;
 }
 
-.header__toogle {
+.header__toggle {
   width: 30px;
   color: transparent;
   border: 0;
@@ -52,7 +52,7 @@
 }
 
 @media (max-width: 990px) {
-  .header__toogle {
+  .header__toggle {
     display: block;
   }
 }
