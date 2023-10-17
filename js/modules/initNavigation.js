@@ -10,11 +10,21 @@ export const initNavigation = () => {
   navItem.forEach((item) => {
     item.addEventListener('click', () => {
       navBar.classList.remove('active');
-    })
-  })
+    });
+  });
 
-  window.addEventListener('click', (event) => {    
-    if (navBar !== event.target && !btnOpen.contains(event.target)) {
+  window.addEventListener('click', (event) => {
+    if (!navBar.contains(event.target) && !btnOpen.contains(event.target)) {
+      navBar.classList.remove('active');
+    }
+  });
+
+  window.addEventListener('touchstart', (event) => {
+    if (
+      !navBar.contains(event.target) &&
+      !btnOpen.contains(event.target) &&
+      navBar.classList.contains('active')
+    ) {
       navBar.classList.remove('active');
     }
   });
