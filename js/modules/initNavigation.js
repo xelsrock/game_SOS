@@ -14,7 +14,11 @@ export const initNavigation = () => {
   });
 
   window.addEventListener('click', (event) => {
-    if (!navBar.contains(event.target) && !btnOpen.contains(event.target)) {
+    if (
+      !navBar.contains(event.target) &&
+      !btnOpen.contains(event.target) &&
+      navBar.classList.contains('active')
+    ) {
       navBar.classList.remove('active');
     }
   });

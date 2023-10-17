@@ -70,6 +70,7 @@
   position: relative;
   top: 30px;
   color: #fff;
+  cursor: pointer;
   animation: scroll-down linear 0.7s infinite;
 }
 
