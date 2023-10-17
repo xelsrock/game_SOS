@@ -1,5 +1,5 @@
 .preview {
-  background-image: url('../assets/images/bg_1.jpg');
+  background-image: url('../assets/images/bg/bg_1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -70,7 +70,7 @@
   position: relative;
   top: 30px;
   color: #fff;
-  animation: scroll-down linear 0.7s 20;
+  animation: scroll-down linear 0.7s infinite;
 }
 
 .preview__about:before {

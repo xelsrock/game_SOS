@@ -1,7 +1,7 @@
 .about__container {
   display: flex;
   flex-direction: row;
-  background-image: url('../assets/images/bg_2.jpg');
+  background-image: url('../assets/images/bg/bg_2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -22,7 +22,7 @@
   overflow: hidden;
   white-space: nowrap;
   letter-spacing: 2px;
-  animation: typing 3s steps(100, end);
+  /* animation: typing 3s steps(100, end); */
 
   font-size: 24px;
   font-weight: 400;
@@ -81,6 +81,7 @@
   height: auto;
   max-height: 610px;
   box-shadow: 0px 5px 17px 2px rgba(34, 60, 80, 0.2);
+  transition: left .3s ease-in-out;
 }
 
 .about__slider-img.active {
@@ -126,6 +127,7 @@
 @media (max-width: 1660px) {
   .about__slider-img {
     max-width: 450px;
+    max-height: 550px;
   }
 
   .about__slider-arrow {
@@ -133,19 +135,22 @@
   }
 
   .about__slider-img.noactive__one {
-    scale: 0.9;
-    top: -12px;
+    scale: 0.95;
+    top: 0;
   }
 
   .about__slider-img.noactive__two {
-    top: 12px;
-    left: 80px;
+    left: 90px;
   }
 }
 
 @media (max-width: 1500px) {
   .about__slider-img {
     max-width: 400px;
+  }
+
+  .about__slider-img.noactive__two {
+    left: 90px;
   }
 
   .about__slider-arrow {
@@ -156,11 +161,20 @@
 @media (max-width: 1290px) {
   .about__info-title {
     font-size: 65px;
-    margin-bottom: 40px;
+    margin-bottom: 40px;  
   }
 
   .about__slider-img {
     max-width: 380px;
+    max-height: 465px;
+  }
+
+  .about__slider-img.noactive__one {
+    top: 0;
+  }
+
+  .about__slider-img.noactive__two {
+    left: 90px;
   }
 }
 
@@ -207,6 +221,7 @@
 
   .about__slider-img {
     max-width: 350px;
+    max-height: 430px;
   }
 }
 
@@ -231,21 +246,20 @@
 
   .about__slider-img {
     max-width: 250px;
+    max-height: 305px;
   }
 
   .about__slider-img.noactive__one {
-    scale: 0.85;
-    top: -8px;
-    left: 45px;
+    left: 40px;
   }
 
   .about__slider-img.noactive__two {
-    scale: .8;
-    top: 8px;
+    scale: .85;
+    top: 5px;
     left: 75px;
   }
 
   .about__slider-arrow {
-    top: 150px;
+    top: 130px;
   }
 }

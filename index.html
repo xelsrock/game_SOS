@@ -18,17 +18,17 @@
   </head>
   <body>
     <main class="main">
-      <div class="preview">
+      <div class="preview" id="main">
         <div class="container header__container">
           <header class="header">
             <img class="header__logo" src="./assets/images/logo.png" alt="Логотип игры" />
             <nav class="header__nav">
               <ul class="nav__bar">
-                <li class="nav__item">main</li>
-                <li class="nav__item">about</li>
-                <li class="nav__item">game features</li>
-                <li class="nav__item">system requirements</li>
-                <li class="nav__item">quotes</li>
+                <li class="nav__item"><a href="#main">main</a></li>
+                <li class="nav__item"><a href="#about">about</a></li>
+                <li class="nav__item"><a href="#game">game features</a></li>
+                <li class="nav__item"><a href="#system">system requirements</a></li>
+                <li class="nav__item"><a href="#quotes">quotes</a></li>
                 <li class="nav__item">
                   <button class="nav__close">
                     <svg
@@ -111,7 +111,7 @@
         </div>
       </div>
 
-      <div class="about">
+      <div class="about" id="about">
         <div class="about__container container">
           <div class="about__info">
             <h5 class="about__info-subtitle">What is SOS?</h5>
@@ -153,7 +153,7 @@
         </div>
       </div>
 
-      <div class="rule">
+      <div class="rule" id="game">
         <div class="container rule__container">
           <h3 class="rule__subtitle">What’s so special?</h3>
           <h2 class="rule__title">features</h2>
@@ -183,7 +183,7 @@
         </div>
       </div>
 
-      <div class="requirements">
+      <div class="requirements" id="system">
         <div class="container requirements__container">
           <h3 class="req__subtitle">Can My Computer Run this game?</h3>
           <h2 class="req__title">system requirements</h2>
@@ -219,7 +219,7 @@
         </div>
       </div>
 
-      <div class="reviews">
+      <div class="reviews" id="quotes">
         <div class="container reviews__container">
           <div class="review__info">
             <h3 class="review__subtitle">What people think?</h3>
@@ -331,8 +331,8 @@
             </p>
 
             <div class="subscribe__form">
-              <input type="text" placeholder="Your email address" class="subscribe__input" />
-              <button class="subscribe__btn btn">Subscribe now</button>
+              <input type="email" placeholder="Your email address..." class="subscribe__input" />
+              <button disabled class="subscribe__btn btn">Subscribe now</button>
             </div>
           </div>
 
@@ -341,11 +341,11 @@
               <img class="footer__logo" src="./assets/images/logo.png" alt="Логотип игры" />
 
               <ul class="footer__nav">
-                <li class="footer__nav-item">main</li>
-                <li class="footer__nav-item">about</li>
-                <li class="footer__nav-item">game features</li>
-                <li class="footer__nav-item">system requirements</li>
-                <li class="footer__nav-item">quotes</li>
+                <li class="footer__nav-item"><a href="#main">main</a></li>
+                <li class="footer__nav-item"><a href="#about">about</a></li>
+                <li class="footer__nav-item"><a href="#game">game features</a></li>
+                <li class="footer__nav-item"><a href="#system">system requirements</a></li>
+                <li class="footer__nav-item"><a href="#quotes">quotes</a></li>
               </ul>
 
               <ul class="footer__social">

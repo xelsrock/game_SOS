@@ -18,6 +18,11 @@ h1, h2, h3, h4, h5 {
   font-family: 'Bebas Neue', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .container {
   padding: 50px 120px;
   height: 100vh;
@@ -40,8 +45,23 @@ h1, h2, h3, h4, h5 {
 
 .btn:disabled {
   pointer-events: none;
-  opacity: .5;
+  opacity: .7;
 }
+
+/* input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid #ff9900;
+  -webkit-text-fill-color: #ffb548;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  transition: background-color 5000s ease-in-out 0s;
+} */
 
 @media (max-width: 1500px) {
   .container {

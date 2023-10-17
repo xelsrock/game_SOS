@@ -1,5 +1,5 @@
 .subscribe__container {
-  background-image: url('../assets/images/bg_6.jpg');
+  background-image: url('../assets/images/bg/bg_6.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -19,7 +19,7 @@
 
 .subscribe__container:after {
   content: '';
-  background-image: url('../assets/images/bg_6_1.jpg');
+  background-image: url('../assets/images/bg/bg_6_1.jpg');
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
