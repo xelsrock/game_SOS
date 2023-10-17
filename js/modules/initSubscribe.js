@@ -4,7 +4,6 @@ const input = document.querySelector('.subscribe__input');
 const handleInput = () => {
   if (input.value.length > 0) {
     input.value = '';
-    btn.disabled = true;
     btn.textContent = '';
 
     const loader = document.createElement('div');
@@ -19,12 +18,6 @@ const handleInput = () => {
 
 export const initSubscribe = () => {
   input.addEventListener('keydown', (event) => {
-    if (input.value.length > 0) {
-      btn.disabled = false;
-    } else {
-      btn.disabled = true;
-    }
-
     if (event.code === 'Enter') {
       handleInput();
       input.blur();
