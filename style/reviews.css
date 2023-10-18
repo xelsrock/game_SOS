@@ -31,6 +31,12 @@
   letter-spacing: 3px;
   font-weight: 500;
   margin-bottom: 40px;
+  scale: 2;
+  transition: scale .5s ease-in-out;
+}
+
+.review__title.scroll {
+  scale: 1
 }
 
 .review__description {
@@ -38,6 +44,15 @@
   color: #fff;
   font-size: 18px;
   text-align: justify;
+
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s ease-in, transform 1s ease-in-out;
+}
+
+.review__description.scroll {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .review__button {
@@ -64,6 +79,22 @@
   border-radius: 10px;
   margin-bottom: 30px;
   background-color: #1a1a1b;
+
+  transform: translateX(500px);
+
+  transition: transform 1s ease-in-out;
+}
+
+.reviews__item-one.scroll {
+  transform: translateX(0);
+}
+
+.reviews__item-two.scroll {
+  transform: translateX(0);
+}
+
+.reviews__item-three.scroll {
+  transform: translateX(0);
 }
 
 .reviews__item:last-child {
@@ -78,7 +109,7 @@
   position: absolute;
   right: 30px;
   top: 35px;
-  transition: scale .2s ease-in-out;
+  transition: scale 0.2s ease-in-out;
   cursor: pointer;
 }
 

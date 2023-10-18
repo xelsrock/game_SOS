@@ -6,8 +6,11 @@
 }
 
 .req__subtitle {
-  margin-top: 100px;
-  margin-bottom: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 350px;
+  margin: 100px auto 15px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,6 +19,10 @@
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+.req__subtitle.scroll {
+  animation: typing 2s steps(100, end);
 }
 
 .req__title {
@@ -30,6 +37,10 @@
   margin-bottom: 100px;
 }
 
+.req__title.scroll {
+  animation: anim-flipX 3s ease-in-out 1;
+}
+
 .req__table {
   display: grid;
   grid-template-columns: 56% 44%;
@@ -38,8 +49,12 @@
   width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: #fff;
+  scale: 0;
+  transition: scale .8s ease-in-out;
+}
+
+.req__table.scroll {
   scale: 1;
-  transition: scale 1s ease-in-out;
 }
 
 .req__os {

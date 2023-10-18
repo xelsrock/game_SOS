@@ -32,10 +32,24 @@
   font-weight: 400;
   margin-bottom: 50px;
   color: #fff;
+
+  transform: scale(2, 1);
+  transition: transform .5s ease-in-out;
+}
+
+.rule__title.scroll {
+  transform: scale(1);
 }
 
 .rule__accordion {
   padding-left: 30px;
+
+  transform: translateX(200px);
+  transition: transform .5s ease-in;
+}
+
+.rule__accordion.scroll {
+  transform: translateX(0);
 }
 
 .rule__item {
